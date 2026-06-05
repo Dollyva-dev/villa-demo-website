@@ -160,7 +160,7 @@ export default function HeroSection() {
         <img
           ref={img1Ref}
           // Swap these URLs with '/villa_01.jpg'
-          src="/villa_01.jpg"
+          src="/villa_01.png"
           alt="Obsidian Villa Kandy Exterior at Dusk"
           className="absolute inset-0 h-full w-full object-cover"
         />
@@ -169,7 +169,7 @@ export default function HeroSection() {
         <img
           ref={img2Ref}
           // Swap these URLs with '/villa_02.jpg'
-          src="/villa_02.jpg"
+          src="/villa_02.png"
           alt="Obsidian Villa Infinity Edge over Misty Valley"
           className="absolute inset-0 h-full w-full object-cover"
         />
@@ -178,7 +178,7 @@ export default function HeroSection() {
         <img
           ref={img3Ref}
           // Swap these URLs with '/villa_03.jpg'
-          src="/villa_03.jpg"
+          src="/villa_03.png"
           alt="Obsidian Villa Canopy Bedroom View"
           className="absolute inset-0 h-full w-full object-cover"
         />
@@ -189,10 +189,7 @@ export default function HeroSection() {
 
         <h1 className="hero-element mb-6 text-5xl md:text-8xl font-bold tracking-tighter leading-none">
           BREATHE.<br />
-          <span
-            className="text-transparent"
-            style={{ WebkitTextStroke: '1px rgba(255,255,255,0.7)' }}
-          >
+          <span className="text-transparent" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.7)' }}>
             YOU ARE ABOVE
           </span><br />
           THE CLOUDS.
