@@ -1,21 +1,22 @@
-import { Footer } from "@/components/layout/Footer";
-import { Header } from "@/components/layout/Header";
-import { AboutSection } from "@/components/sections/AboutSection";
-import { ContactSection } from "@/components/sections/ContactSection";
-import { FeaturesSection } from "@/components/sections/FeaturesSection";
-import { HeroSection } from "@/components/sections/HeroSection";
+import HeroSection from '@/components/sections/HeroSection';
+import AboutSection from '@/components/sections/AboutSection';
+import FeaturesSection from '@/components/sections/FeaturesSection';
+import ContactSection from '@/components/sections/ContactSection';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
 
 export default function Home() {
   return (
-    <div id="top" className="flex min-h-full flex-col bg-zinc-50 font-sans dark:bg-black">
-      <Header />
-      <main className="flex-1">
-        <HeroSection />
-        <AboutSection />
-        <FeaturesSection />
-        <ContactSection />
-      </main>
+    <main className="relative w-full flex flex-col items-center justify-center">
+      {/* We can make the header absolute/fixed inside the Header component later */}
+      <Header /> 
+      
+      <HeroSection />
+      <AboutSection />
+      <FeaturesSection />
+      <ContactSection />
+      
       <Footer />
-    </div>
+    </main>
   );
 }
