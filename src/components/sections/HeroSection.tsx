@@ -1,6 +1,6 @@
  'use client';
 
-import { useRef } from 'react';
+import { useRef, type RefObject } from 'react';
 import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 import Loader from '@/components/layout/Loader';
@@ -150,7 +150,11 @@ export default function HeroSection() {
     <section ref={container} className="relative h-screen w-full overflow-hidden bg-black text-white">
 
       {/* Loader extracted to its own component */}
-      <Loader loaderRef={loaderRef} counterRef={counterRef} awakenRef={awakenRef} />
+      <Loader 
+        loaderRef={loaderRef as RefObject<HTMLDivElement>}
+        counterRef={counterRef as RefObject<HTMLSpanElement>}
+        awakenRef={awakenRef as RefObject<HTMLSpanElement>}
+      />
 
       {/* --- NEW SLIDESHOW CONTAINER --- */}
       <div ref={slideshowContainerRef} className="absolute inset-0 z-0">
